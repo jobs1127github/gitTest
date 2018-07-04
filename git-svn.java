@@ -89,8 +89,25 @@ public class gitSvn{
 		忽略[ ignored ]：仓库认为该文件不存在（如bin目录，不需要关注）。通过右键Team => Ignore 添加忽略文件
 		前提是该文件还没被git管理，如果已经被git管理了，可以Team ==> Advanced ==>untrack
 		这时在把文件添加到Ignore就可以了。
-	}
+		
+		
+		//更新远程仓库修改到本地，当前本地分支合并其他人push到远程的分支
+		方法1： 
+		     1）项目右键 => Team => Remote =>Fetch form upstream
+		     注：该操作首先将远程的分支同步到本地的origin/master分支
+		     2）项目右键 => Team => Marge
+		     注：合并，可以查看和本地是否有冲突，可以通过合并解决冲突。
+		 
+		方法2： 项目右键 => Team => Pull..（这个pull..远程地址可以填写（新建）） 
+		       或者 项目右键 => Team => Pull 这个pull的远程地址是上一次的
+		     注：Pull 合并了Fetch from upstream 和marge；强制Marge，但上面的方法更安全。
+		     
+		  弹框中：Remote:若没有可以新建一个远程地址
+		  	  References:引用的分支，即需要pull哪个引用的分支，比如：master或dev,若填写master就是pullmaster分支到本地，并合并本地的分支
 	
+			
+	}
+	//dev
 			
 			
 			
