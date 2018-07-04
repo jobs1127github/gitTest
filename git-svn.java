@@ -82,6 +82,13 @@ public class gitSvn{
 		其他人对该文件也commit、push时，若有冲突，则push失败，这时需要pull下（pull=fetch+merge），服务器端的代码就会和
 		本地的代码合并，如果有冲突，则需要你手动合并，手动合并完，tortoiseGit/resovle 告知git已经resovle解决了冲突，
 		这时再commit，在push就成功了。
+		
+		add到暂存区，commit到本地仓库，push到远程仓库。
+		
+		
+		忽略[ ignored ]：仓库认为该文件不存在（如bin目录，不需要关注）。通过右键Team => Ignore 添加忽略文件
+		前提是该文件还没被git管理，如果已经被git管理了，可以Team ==> Advanced ==>untrack
+		这时在把文件添加到Ignore就可以了。
 	}
 	
 			
