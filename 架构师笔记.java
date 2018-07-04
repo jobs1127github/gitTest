@@ -12,5 +12,5 @@ public class 架构师笔记{
 	3、写文档的能力、沟通表达(说服能力)、培训能力。
 	
 	
-	哈哈
+	哈哈https://github.com/jobs1127github/gitTest.git
 }
