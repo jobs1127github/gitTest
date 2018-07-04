@@ -1,3 +1,15 @@
+/****
+ * 
+ * @author jobs1127
+ *
+ * git概念、原理、使用
+ * https://blog.csdn.net/zl1zl2zl3/article/details/52637737
+ * 
+ * Egit：（Git Eclipse Plugin）
+ * https://blog.csdn.net/mengxiangxingdong/article/details/78827292
+ * 
+ * git教程：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+ */
 public class gitSvn{
 	/**
 	 * git+TortoiseGit+码云在win7下使用
@@ -65,6 +77,11 @@ public class gitSvn{
 		整个仓库版本都会还原，不是针对某个一个文件的，要慎重操作，最好是大家都提交后，再进行merge操作。
 		7、merge时，git是一行一行比较的，同一行若2个人都修改了，就会冲突。<<<head是主分支的代码开始，>>>是其他分支的代码开始，中间通过====隔开对方的代码
 		8、若没有冲突，在把对方的代码合并到你的分支里。
+		
+		使用tortoiseGit，某个文件，commit后，push后
+		其他人对该文件也commit、push时，若有冲突，则push失败，这时需要pull下（pull=fetch+merge），服务器端的代码就会和
+		本地的代码合并，如果有冲突，则需要你手动合并，手动合并完，tortoiseGit/resovle 告知git已经resovle解决了冲突，
+		这时再commit，在push就成功了。
 	}
 	
 			
